@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/live"
+        android:icon="@drawable/live"
+        android:title="Live" />
+    <item
+        android:id="@+id/fixtures"
+        android:icon="@drawable/fixtures"
+        android:title="Fixtures" />
+    <item
+        android:id="@+id/Table"
+        android:icon="@drawable/table"
+        android:title="Table" />
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/video"
+        android:title="Videos" />
+
+
+
+
+</menu>

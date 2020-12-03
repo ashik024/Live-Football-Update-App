@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <FrameLayout
+
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/image44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/feild" />
+
+            <TextView
+                android:id="@+id/hometeamname"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Arsenal"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/awayteamname"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Spurs"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="8-2"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:drawableLeft="@drawable/ic_time"
+
+                android:text="69"
+
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_below="@id/frame"
+
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/gradiant"
+
+                >
+
+
+                <ImageView
+
+                    android:id="@+id/image77"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginEnd="150dp"
+                    android:padding="2dp" />
+
+                <TextView
+                    android:id="@+id/texthalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/image77"
+                    android:layout_marginTop="-1dp"
+                    android:text="4-2"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texthalf"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-3dp"
+                    android:paddingLeft="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="226dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/goal"
+
+
+                    android:text="scorer"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textaway"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texthalf"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginEnd="0dp"
+                    android:drawableLeft="@drawable/goal"
+                    android:text="scoreer"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textHomescore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textHome"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="226dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/cards"
+                    android:paddingLeft="2dp"
+                    android:text="card"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textawayscore"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textaway"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/cards"
+                    android:text="card"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textHomecard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textHomescore"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="226dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/formation"
+                    android:text="formation"
+                    android:paddingLeft="2dp"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textawaycard"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textawayscore"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="formation"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="10sp"
+                    android:drawableLeft="@drawable/formation"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crad2">
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:padding="4dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/gradiant"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lineup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lineup"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/playerHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lineup"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="226dp"
+
+                    android:text="Home"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/playerAway"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lineup"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="Away"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card3">
+
+            <RelativeLayout
+                android:id="@+id/relative5"
+                android:padding="4dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/gradiant"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Substitute"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/subHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sub"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-3dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="226dp"
+
+                    android:text="Home"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subAway"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sub"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="Away"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
